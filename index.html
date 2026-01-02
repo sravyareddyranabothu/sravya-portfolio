@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Portfolio of Sravya - Developer & Creator.">
+</head>
+
+<body>
+    <!-- Canvas for background animation -->
+    <canvas id="bg-canvas"></canvas>
+
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Sravya <span class="dot">Ranabothu</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content fade-in-up">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="hero-title">Sravya Ranabothu</h1>
+                    <h2 class="hero-subtitle">Full Stack Java Developer</h2>
+                    <p class="hero-description">
+                        I am a motivated and detail-oriented <strong>Full Stack Java Developer</strong> with strong
+                        expertise in <strong>Java-based application development, backend systems, and responsive web
+                            design</strong>. I specialize in building <strong>clean, scalable, and efficient software
+                            solutions</strong> while continuously learning modern technologies.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="assets/Sravyaranabothu_resume.pdf" class="btn btn-primary" download>View Resume <i
+                                class="fas fa-file-alt"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me <i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-in-up delay-200">
+                    <div class="blob"></div>
+                    <img src="assets/profile_pic.jpeg" alt="Sravya Ranabothu" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="About Me">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text fade-in-left">
+                        <p>I am a <strong>Full Stack Java Developer (Fresher)</strong> with hands-on experience in
+                            developing <strong>web and desktop applications</strong> using <strong>Java, Spring Boot,
+                                JDBC, Servlets, JSP, and SQL databases</strong>.</p>
+                        <p>I enjoy transforming ideas into real-world applications, writing maintainable code, and
+                            solving logical challenges. I am passionate about backend development and eager to
+                            contribute to innovative teams while growing as a software engineer.</p>
+
+                        <div class="strengths">
+                            <h3>Key Strengths:</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Strong foundation in <strong>Object-Oriented
+                                        Programming</strong></li>
+                                <li><i class="fas fa-check-circle"></i> Good understanding of <strong>database design &
+                                        SQL queries</strong></li>
+                                <li><i class="fas fa-check-circle"></i> Ability to quickly learn new frameworks and
+                                    tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-visual fade-in-right">
+                        <!-- Check if aboutme.jpeg exists or use a coding illustration -->
+                        <img src="assets/aboutme.jpeg" alt="About Sravya" class="about-img_viz">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Technical Skills">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in-up">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h3>Frontend</h3>
+                        <ul class="skill-list">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in-up delay-100">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <h3>Backend</h3>
+                        <ul class="skill-list">
+                            <li>Core Java</li>
+                            <li>JDBC</li>
+                            <li>Servlets & JSP</li>
+                            <li>Spring Boot</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in-up delay-200">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Databases</h3>
+                        <ul class="skill-list">
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card fade-in-up delay-300">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Tools & Platforms</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>Eclipse IDE</li>
+                            <li>Visual Studio Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Projects">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card fade-in-up">
+                        <div class="project-img-wrapper">
+                            <img src="assets/vision_based_vechile_dection.jpeg" alt="Vehicle Detection">
+                            <div class="overlay">
+                                <!-- Links removed as requested -->
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Vision-Based Multi-Vehicle Red Light Violation Detection</h3>
+                            <p class="tech-stack">Python | YOLOv8 | OpenCV</p>
+                            <ul>
+                                <li>Developed a <strong>real-time computer vision system</strong> to detect multiple
+                                    vehicles simultaneously.</li>
+                                <li>Implemented <strong>traffic signal detection</strong> and <strong>stop-line
+                                        violation logic</strong>.</li>
+                                <li>Used <strong>deep learning (YOLOv8)</strong> for vehicle detection and tracking.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card fade-in-up delay-100">
+                        <div class="project-img-wrapper">
+                            <img src="assets/ATM.jpeg" alt="ATM System">
+                            <div class="overlay">
+                                <a href="https://github.com/sravyareddyranabothu" class="btn-icon" aria-label="GitHub"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/sravyaranabothu_java-corejava-filehandling-activity-7389170510359654400-ba4e"
+                                    class="btn-icon" aria-label="LinkedIn" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>ATM Simulation System</h3>
+                            <p class="tech-stack">Java Swing | Oracle Database</p>
+                            <ul>
+                                <li>Built a secure desktop-based ATM application.</li>
+                                <li>Features: User authentication, Balance enquiry, Cash withdrawal & deposit, Receipt
+                                    generation.</li>
+                                <li>Followed <strong>modular and OOP principles</strong>.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card fade-in-up delay-200">
+                        <div class="project-img-wrapper">
+                            <img src="assets/Electronic_POS.jpeg" alt="POS System">
+                            <div class="overlay">
+                                <a href="https://github.com/sravyareddyranabothu/Electronic-POS-Java" class="btn-icon"
+                                    aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/posts/sravyaranabothu_java-swing-jdbc-activity-7410278516560359424-HtRD"
+                                    class="btn-icon" aria-label="LinkedIn" target="_blank"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Electronic Point of Sale (POS) System</h3>
+                            <p class="tech-stack">Java | JDBC | Swing</p>
+                            <ul>
+                                <li>Designed an <strong>Admin & Employee-based POS system</strong>.</li>
+                                <li>Functionalities: Product management, Billing, Invoice generation, Inventory control.
+                                </li>
+                                <li>Improved efficiency for electronic store sales.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card fade-in-up delay-300">
+                        <div class="project-img-wrapper">
+                            <img src="assets/complaint_management_system.jpeg" alt="Complaint Management">
+                            <div class="overlay">
+                                <a href="https://github.com/sravyareddyranabothu" class="btn-icon" aria-label="GitHub"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/sravyaranabothu" class="btn-icon"
+                                    aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Complaints Management System</h3>
+                            <p class="tech-stack">C# | ASP.NET</p>
+                            <ul>
+                                <li>Developed a web-based complaint registration and tracking system.</li>
+                                <li>Enabled users to register complaints and track status.</li>
+                                <li>Admin panel for resolution and reporting.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Highlights">Achievements & Highlights</h2>
+                <div class="achievements-container fade-in-up">
+                    <div class="achievement-item">
+                        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <p>Built <strong>4+ real-world projects</strong> across Java, Python, and Web technologies</p>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="icon-box"><i class="fas fa-sync-alt"></i></div>
+                        <p>Strong understanding of <strong>full software development lifecycle</strong></p>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="icon-box"><i class="fas fa-database"></i></div>
+                        <p>Hands-on experience with <strong>databases, backend logic, and UI integration</strong></p>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="icon-box"><i class="fas fa-lightbulb"></i></div>
+                        <p>Passionate about <strong>problem-solving and continuous learning</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Get In Touch">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info fade-in-left">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Hyderabad, Telangana, India</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9347516357</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:sravyaranabothu50@gmail.com">sravyaranabothu50@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/sravyareddyranabothu" class="social-icon" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sravyaranabothu" class="social-icon" target="_blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form fade-in-right">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Sravya Ranabothu</h3>
+                <p>Full Stack Java Developer</p>
+                <div class="copyright">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
